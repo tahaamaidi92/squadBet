@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/dashboard_admin.css">
+    <link rel="icon" type="image/jpg" href="./images/logo squatbet.jpg">
+    <!--Owl Carousel-->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
+    <!--font_awsome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Magnificient POP Up-->
+    <link rel="stylesheet" href="./css/magnific-popup.css">
+    <title>SQUAD_BET</title>
+    <style>
+        .show-list { opacity: 1; }
+        .input-emails_delete{opacity : 1};
+      </style>
+</head>
+<body>
+    <div class="container">
+    <div class="row">
+        <div class="content_tous_div col_xl_12 col-lg-12 col-md-12 col-sm-12 col">
+         
+            <div class="container">
+                <div class="row">
+
+
+                    <div id="confimer_la_fin_de_pari" style="display: none;">
+                        <span>Confirmer la fin de ce pari?</span>
+                        <button>Confirmer</button>
+   
+                      </div>
+
+                       <!--./Modal suppresion ts emails-->
+                       <div id="openModal-about_3" class="modalDialog_3">
+                        
+                        <div class="modal-content_3">
+                            <a href="#close" title="Close" class="close"><span class="croix">✕</span></a>
+                            <div class="modal-header_3">	
+                                <span class="modal-title-3">Pari terminé !</span>					
+                            </div>
+                            <div class="modal-body_3">
+                                <p class="text-center-3">Consulter le classement finale et veuillez confirmer la fin de ce pari</p>
+                                <p class="text-center-3-1">Il sera automatiquement supprimé aprés 7 jours</p>
+                            </div>
+                            <div class="modal-footer_3">
+                                <a href="#close" class="btn_confirmer_suppression_email_3" id="#confimer_la_fin_de_pari">Confirmer</a>
+                            </div>
+                        </div>
+                    
+                </div>    
+                  <!--./Modal suppresion ts emails-->
+
+                      
+                   <!--Navbarleft-->
+             <!--button-->
+             <i class="fa fa-bars fa-2x" id="btn_hamborger"></i> 
+             <!--button-->
+             <div  style=" margin-top: 2%;" class="col-xl-2 col-lg-2 col-md-3 col-sm-12 col sidebar_left">
+            
+                <header class="sidebar_header">  
+                    <img id="img_profile" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"  alt="...">
+                      <a href="profil_admin.html"><span>Jhon Doe</span></a>
+                        
+                      <div class="notifications">
+                      <i class="far fa-bell">
+                        <span class="rad-menu-badge">3</span>
+                      </i>
+                    </div>
+
+                </header><!--header_sidebar-->
+
+                <div class="div_notification_left">
+
+                    <div class="header_notification">
+                      <span class="span_header_notification">Notification</span>
+                    </div><!--./header_notification-->
+
+                    <div class="notification1 notifs">
+                        <a href="#openModal-about_3">
+                        <span class="circle"></span>
+
+                     <div class="div1_notification">
+
+                       <img src="./images/serieA.png" alt="logo">
+                        <p>Pari <strong style="font-size: 12px; font-weight: 900;">SERIE A</strong> est terminé!<br>Consultez le résultat</p>
+
+                     </div>
+                     <div class="div2_notification">
+                      <span>Il y'a 1 heure</span>
+                     </div>
+                    </a>
+
+                    </div><!--./notification1-->
+
+                    <div class="notification2 notifs">
+                        <span class="circle"></span>
+
+                     <div class="div1_notification">
+
+                       <img src="./images/ligue1.png" alt="logo">
+                        <p>Pari <strong style="font-size: 12px; font-weight: 900;">LIGUE1</strong> est comencé<br>Consultez le résultat</p>
+
+                     </div>
+                     <div class="div2_notification">
+                      <span>Il y'a 1 heure</span>
+                     </div>
+
+                    </div><!--./notification2-->
+
+                    <div class="notification3 notifs">
+                        <span class="circle"></span>
+
+                     <div class="div1_notification">
+
+                       <img src="./images/avatar-JohnDoe.jpg" alt="logo">
+                        <p>Pari <strong style="font-size: 12px; font-weight: 900;">SERIE A</strong> est terminé!<br>Consultez le résultat</p>
+
+                     </div>
+                     <div class="div2_notification">
+                      <span>Il y'a 1 heure</span>
+                     </div>
+
+                    </div><!--./notification3-->
+
+                    <div class="notification4 notifs">
+                        <span class="circle"></span>
+
+                     <div class="div1_notification">
+
+                       <img src="./images/img_avatar.png" alt="logo">
+                        <p>Pari <strong style="font-size: 12px; font-weight: 900;">SERIE A</strong> est terminé!<br>Consultez le résultat</p>
+
+                     </div>
+                     <div class="div2_notification">
+                      <span>Il y'a 1 heure</span>
+                     </div>
+                     
+                    </div><!--./notification4-->
+
+                    <div class="notification5 notifs">
+                        <span class="circle"></span>
+
+                     <div class="div1_notification">
+
+                       <img src="./images/img_avatar2.png" alt="logo">
+                        <p>Pari <strong style="font-size: 12px; font-weight: 900;">SERIE A</strong> est terminé! <br> Consultez le résultat</p>
+
+                     </div>
+                     <div class="div2_notification">
+                      <span>Il y'a 1 heure</span>
+                     </div>
+                     
+                    </div><!--./notification5-->
+                  </div><!--./div_notification_left-->
+
+                <div class="box">
+                    <ul class="sidebar-menu">
+                       <li class="treeview li_invitations">
+                           <a href="dashboard_admin.html">
+                               <i class="far fa-calendar-alt i1"></i>
+                             <span>Mes Compétitions</span>
+                           </a>
+                         </li>
+
+                         <li class="treeview li_paris">
+                          <a href="mes_paris.html" class="a">
+                            <i class="fas fa-align-left"></i>
+                            <span>Mes Paris</span>
+                          </a>
+                      </li>
+
+                       <li class="treeview li_emails">
+                        <a href="liste_emails.html" class="a active">
+                            <i class="far fa-envelope"></i>
+                          <span>Ma liste d'emails</span>
+                        </a>
+                    </li>
+
+                    </ul>
+                   </div><!--./box-->
+
+                  
+
+            </div><!--./sidebar_left-->
+            <!--Navbarleft-->
+
+            <div style="margin-top: 2%;" class="col-xl-10 col-lg-10 col-md-9 col-sm-12 col liste_des_paris">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col pic_participant" id="id_pic_participant">
+                        <div class="logo_participant" id="id1">
+                            <div class="image_participant" id="img_participant_liste_emails">
+                            <label id="uploadButton1" for="uploadFile1"></label>
+                            <img class="download_image" src="./images/importer photo@2x.png" alt="logo">
+                            <span class="title_participant"><span class="your_files">Importez le logo "JPEG"</span></span>
+                             <input id="uploadFile1"
+                             type="file"
+                             name="image"
+                             class="img"
+                             value="Upload image">
+                             <div class="btn_confirmer_annuler">
+                                <button>Confirmer</button>
+                                <button>Annuler</button>
+                   
+                              </div>
+                              <label class="label_change_logo" id="uploadButton1" for="uploadFile1"><i class="fas fa-camera"></i> <span> changer</span></label>
+                            </div>
+                        </div><!--./logo_participant-->
+                        <div class="carousel_matchs" id="id2">
+                            <label id="uploadButton2" for="uploadFile2"></label>
+                            <div class="glisser_text">
+                                <p><i class="fas fa-arrows-alt"></i> <span>Faites glisser pour déplacer la photo de couverture</span></p>
+                              </div>
+    
+                              <div class="btn_confirmer_annuler_coverture">
+                                <button>Confirmer</button>
+                                <button>Annuler</button>
+                   
+                              </div>
+                              <label class="label_change_logo_coverture" for="uploadFile2"><i class="fas fa-camera"></i> <span> changer</span></label>
+                           
+                            <p class="title_participant_1"><span class="your_files">Importez une photo de couverture de vos colaborateurs "JPEG"</span></p>
+                            <input id="uploadFile2"
+                            type="file"
+                            name="image"
+                            class="img"
+                            value="Upload image_1">
+                            <div class="owl-carousel owl-theme" id="slideshow">
+                                
+                              <div class="item ligue" >
+                                
+ 
+                              </div><!--ligue-->
+                          </div>
+                           </div><!--carousel_match-->
+
+                    </div>  <!--./pic_participant-->
+                </div><!--./row_listes_des_paris-->
+
+                <!--butoon_ajout_supprimer-->
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col ajout_supprimer_button" >
+                        <div style="background-color: white; padding: 2%; border-radius: 3px; margin-top: 2%;">
+                    <div class="content_liste_des_emails">
+                        <div class="div_liste_des_emails">
+
+                            <img class="img_liste_des_emails" src="./images/Group 560@2x.png" alt="icon">
+                            <span class="span_liste_des_emails">Liste des emails</span>
+
+                        </div><!--./div_liste_des_emails-->
+
+                        <div class="div_btns_ajout_supprrimer">
+                           
+                            <button id="btn_ajouter">Ajouter</button>
+                            <span class="span_supression">Choisissez le(s) email(s) a supprimer</span>
+                            <button id="btn_supprimer">Supprimer</button>
+                            <a href="#myModal" data-toggle="modal"id="btn_partager_lien">Partager un lien</a>
+                            <button id="btn_insertion_manuelle">Insertion manuelle</button>
+                            <span class="span_combien">Combien?</span>
+                            <input class="input_combien" type="text" name="input" id="input_insertion_manuelle">
+                            <button id="btn_confirmer_insertion_manuelle">Confirmer</button>
+                            <a href="#openModal-about" id="btn_confirmer_suppression">Confirmer</a>
+                            <a href="#openModal-about_2" id="btn_confirmer_suppression_tous_emails">Confirmer</a>
+                            <button id="btn_inviter_email">Inviter</button>
+                            <button id="btn_annuler">Annuler</button>
+                            
+
+                        </div><!--./div_btns_ajout_supprrimer-->
+                    </div> <!--./content_liste_des_emails-->
+
+                    <!--div_supprimer_tous_les_messages-->
+                     <div class="supprimer_tous_emails" >
+                        <span>Sélectionner tout</span>
+
+                     </div>
+
+                     <!--./Modal suppresion un emails-->
+                     <div id="openModal-about" class="modalDialog">
+                        
+                            <div class="modal-content_1">
+                                <div class="modal-header_1">	
+                                    <span class="modal-title">Supprimer des emails</span>					
+                                </div>
+                                <div class="modal-body_1">
+                                    <p class="text-center">Êtes-vous sûr ?</p>
+                                </div>
+                                <div class="modal-footer_1">
+                                    <a id="btn_anuller_modal_suppresion" href="#close"><span class="btn_anuller_modal_suppresion">Annuler</span></a>
+                                    <a href="#close" id="btn_confirmer_suppression_email"><span class="btn_confirmer_suppression_email">Oui</span></a>
+                                </div>
+                            </div>
+                        
+                    </div>    
+                      <!--./Modal suppresion un emails-->
+
+                      <!--./Modal suppresion ts emails-->
+                     <div id="openModal-about_2" class="modalDialog_2">
+                        
+                        <div class="modal-content_2">
+                            <div class="modal-header_2">	
+                                <span class="modal-title">Supprimer des emails</span>					
+                            </div>
+                            <div class="modal-body_2">
+                                <p class="text-center">Êtes-vous sûr ?</p>
+                            </div>
+                            <div class="modal-footer_2">
+                                <a id="btn_anuller_modal_suppresion_2" href="#close"><span class="btn_anuller_modal_suppresion">Annuler</span></a>
+                                <a href="#close" id="btn_confirmer_suppression_email_2"><span class="btn_confirmer_suppression_email">Oui</span></a>
+                            </div>
+                        </div>
+                    
+                </div>    
+                  <!--./Modal suppresion ts emails-->
+
+                    <!--div_supprimer_tous_les_messages-->
+
+                     <div class="div_inputs_listes_des_emails" >
+
+                        <div class="contents_div_liste_des_emails">
+                            <div class="input_right_liste_des_emails">
+                             
+                            <div class="div_in">
+                                
+                                <input id="in1" type="text" placeholder="someone@example.com" required>
+                            </div>
+
+                            <div class="div_in">
+                                
+                                <input id="in3" type="text" placeholder="someone@example.com" required>
+                            </div>
+                            <div class="div_in">
+                                
+                                <input id="in5" type="text" placeholder="someone@example.com" required>
+                            </div>
+                            <div class="div_in">
+                                
+                                <input id="in7" type="text" placeholder="someone@example.com" required>
+                            </div>
+                            <div class="div_in">
+                                
+                                <input id="in9" type="text" placeholder="someone@example.com" required>
+                            </div>
+                            <div class="div_in">
+                                
+                                <input id="in11" type="text" placeholder="someone@example.com" required>
+                            </div>
+                            <div class="div_in">
+                                
+                                <input id="in13" type="text" placeholder="someone@example.com" required>
+                            </div>
+                            <div class="div_in">
+                                
+                                <input id="in15" type="text" placeholder="someone@example.com" required>
+                            </div>
+                            <div class="div_in">
+                                
+                                <input id="in17" type="text" placeholder="someone@example.com" required>
+                            </div>
+                             
+                            </div>
+                            <div class="input_left_liste_des_emails">
+                               
+                            <div class="div_in">
+                                
+                                <input id="in2" type="text" placeholder="someone@example.com" required>
+                            </div>
+                            <div class="div_in">
+                                
+                                <input id="in4" type="text" placeholder="someone@example.com" required>
+                            </div>
+                            <div class="div_in">
+                                
+                                <input id="in6" type="text" placeholder="someone@example.com" required>
+                            </div>
+                            <div class="div_in">
+                                
+                                <input id="in8" type="text" placeholder="someone@example.com" required>
+                            </div> 
+                            <div class="div_in">
+                                
+                                <input id="in10" type="text" placeholder="someone@example.com" required>
+                            </div>
+                            <div class="div_in">
+                                
+                                <input id="in12" type="text" placeholder="someone@example.com" required>
+                            </div>
+                            <div class="div_in">
+                                
+                                <input id="in14" type="text" placeholder="someone@example.com" required>
+                            </div>
+                            <div class="div_in">
+                                
+                                <input id="in16" type="text" placeholder="someone@example.com" required>
+                            </div>
+                            <div class="div_in">
+                                
+                                <input id="in18" type="text" placeholder="someone@example.com" required>
+                            </div>
+                              
+                               
+                            </div>
+                               
+                           </div>
+
+                           <div class="AddControl_input">
+                            <!--Add Inputs-->
+                         </div>
+
+                           <div class="hr_bottom">
+                            <hr>
+                           </div><!--div_hr_bootom-->
+
+                     </div><!--input_listes_des_emails-->
+                      
+
+                     <!--./succées_invitation-->
+                      <div class="succées_invitation">
+                        <img src="./images/Group 989@2x.png" alt="logo">
+                        <p>Invitation envoyé avec succées</p>
+
+                      </div><!--./succées_invitation-->
+
+
+                      <!--./Modal partage lien-->
+                      <div id="myModal" class="modal fade">
+                        <div class="modal-dialog modal-confirm">
+                            <div class="modal-content">
+                    
+                                <div class="modal-body">
+
+                                    <div class="div1_modal-body">
+                                    <span class="modal-title_popup">Partager ce lien avec vos colaborateurs pour qu'ils s'inscrivent</span>  
+                                    </div>
+
+                                   <div class="div2_modal-body">
+                                    <input type="text" name="input_modal" id="input_popup" placeholder="https//:example.com" required>
+                                    <button class="btn_copier" data-dismiss="modal">Copier</button>
+                                   </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                      <!--./Modal partage lien-->
+
+                      <!--div image vide liste des emails-->
+                      <div class="liste_vide" style="display: none;">
+                          <img src="./images/Liste vide.png" alt="logo">
+                          <p>Vous n'avez aucune liste d'adresses emails</p>
+                      </div>
+                      <!--div image vide liste des emails-->
+
+                    </div>
+
+                    </div><!--./col_ajout_supprimer_button-->
+                </div><!--./row_ajout_supprimer_button-->
+                <!--butoon_ajout_supprimer-->
+            
+            
+            </div>
+
+                </div><!--./row_content_tous_div-->
+            </div><!--./container_content_tous_div-->   
+        
+        </div><!--./content_tous_div-->   
+     
+    </div><!--./row-->
+    </div><!--./container-->   
+    
+ 
+<!-- Optional JavaScript -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/dashboard_admin.js"></script>
+<script src="js/drag_background.js"></script>
+<!--Owl Carousel-->
+<script src="js/owl.carousel.min.js"></script>
+<!--magnificient POPUP-->
+<script src="./js/jquery.magnific-popup.min.js"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>            
+
+</body>
+</html>

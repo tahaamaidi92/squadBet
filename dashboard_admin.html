@@ -1,0 +1,2834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/dashboard_admin.css">
+    <link rel="icon" type="image/jpg" href="./images/logo squatbet.jpg">
+    <!--Owl Carousel-->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
+    <!--font_awsome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Magnificient POP Up-->
+    <link rel="stylesheet" href="./css/magnific-popup.css">
+    <title>SQUAD_BET</title>
+    <style>
+        .show-list { opacity: 1; }
+        .picked{background-color: #D2D2D2; border-right: 6px solid #FF3952;}
+        .picked2{background-color: #D9D9D9;}
+      </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="content_tous_div col_xl_12 col-lg-12 col-md-12 col-sm-12 col">
+                
+                <div class="container">
+                <div class="row">
+
+                   <div id="confimer_la_fin_de_pari" style="display: none;">
+                     <span>Confirmer la fin de ce pari?</span>
+                     <button>Confirmer</button>
+
+                   </div>
+
+                   <!--./Modal suppresion ts emails-->
+                   <div id="openModal-about_3" class="modalDialog_3">
+                        
+                    <div class="modal-content_3">
+                        <a href="#close" title="Close" class="close"><span class="croix">✕</span></a>
+                        <div class="modal-header_3">	
+                            <span class="modal-title-3">Pari terminé !</span>					
+                        </div>
+                        <div class="modal-body_3">
+                            <p class="text-center-3">Consulter le classement finale et veuillez confirmer la fin de ce pari</p>
+                            <p class="text-center-3-1">Il sera automatiquement supprimé aprés 7 jours</p>
+                        </div>
+                        <div class="modal-footer_3">
+                            <a href="#close" class="btn_confirmer_suppression_email_3" id="#confimer_la_fin_de_pari">Confirmer</a>
+                        </div>
+                    </div>
+                
+            </div>    
+              <!--./Modal suppresion ts emails-->
+
+                     <!--Navbarleft-->
+             <!--button-->
+             <i class="fa fa-bars fa-2x" id="btn_hamborger"></i> 
+             <!--button-->
+             <div  style=" margin-top: 2%;" class="col-xl-2 col-lg-2 col-md-3 col-sm-12 col sidebar_left">
+            
+                <header class="sidebar_header">  
+                  
+                    <img id="img_profile" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"  alt="...">
+                      <a href="profil_admin.html"><span>Jhon Doe</span></a>
+                      
+                      <div class="notifications">
+                      <i class="far fa-bell">
+                        <span class="rad-menu-badge">3</span>
+                      </i>
+                    </div>
+
+                </header><!--header_sidebar-->
+
+                <div class="div_notification_left">
+
+                  <div class="header_notification">
+                    <span class="span_header_notification">Notification</span>
+                  </div><!--./header_notification-->
+                   
+                  <div class="notification1 notifs">
+                    <a href="#openModal-about_3">
+                    <span class="circle"></span>
+
+                   <div class="div1_notification">
+
+                     <img src="./images/serieA.png" alt="logo">
+                      <p>Pari <strong style="font-size: 12px; font-weight: 900;">SERIE A</strong> est terminé!<br>Consultez le résultat</p>
+
+                   </div>
+                   <div class="div2_notification">
+                    <span>Il y'a 1 heure</span>
+                   </div>
+                  </a>
+
+                  </div><!--./notification1-->
+
+                  <div class="notification2 notifs">
+                    <span class="circle"></span>
+
+                   <div class="div1_notification">
+
+                     <img src="./images/ligue1.png" alt="logo">
+                      <p>Pari <strong style="font-size: 12px; font-weight: 900;">LIGUE1</strong> est comencé<br>Consultez le résultat</p>
+
+                   </div>
+                   <div class="div2_notification">
+                    <span>Il y'a 1 heure</span>
+                   </div>
+
+                  </div><!--./notification2-->
+
+                  <div class="notification3 notifs">
+                    <span class="circle"></span>
+
+                   <div class="div1_notification">
+
+                     <img src="./images/avatar-JohnDoe.jpg" alt="logo">
+                      <p>Pari <strong style="font-size: 12px; font-weight: 900;">SERIE A</strong> est terminé!<br>Consultez le résultat</p>
+
+                   </div>
+                   <div class="div2_notification">
+                    <span>Il y'a 1 heure</span>
+                   </div>
+
+                  </div><!--./notification3-->
+
+                  <div class="notification4 notifs">
+                    <span class="circle"></span>
+
+                   <div class="div1_notification">
+
+                     <img src="./images/img_avatar.png" alt="logo">
+                      <p>Pari <strong style="font-size: 12px; font-weight: 900;">SERIE A</strong> est terminé!<br>Consultez le résultat</p>
+
+                   </div>
+                   <div class="div2_notification">
+                    <span>Il y'a 1 heure</span>
+                   </div>
+                   
+                  </div><!--./notification4-->
+
+                  <div class="notification5 notifs">
+                    <span class="circle"></span>
+
+                   <div class="div1_notification">
+
+                     <img src="./images/img_avatar2.png" alt="logo">
+                      <p>Pari <strong style="font-size: 12px; font-weight: 900;">SERIE A</strong> est terminé! <br> Consultez le résultat</p>
+
+                   </div>
+                   <div class="div2_notification">
+                    <span>Il y'a 1 heure</span>
+                   </div>
+                   
+                  </div><!--./notification5-->
+                </div><!--./div_notification_left-->
+                
+                <div class="box">
+                    <ul class="sidebar-menu">
+                       <li class="treeview li_invitations ">
+                           <a href="dashboard_admin.html" class="active" id="comp">
+                               <i class="far fa-calendar-alt i1"></i>
+                             <span>Mes Compétitions</span>
+                           </a>
+                           <ul class="treeview-menu">
+                            <li class="li1"><i class="fas fa-circle circle1"></i><a href="#" class="btn_1_left active1">Périodiques</a></li>
+                            <li class="li2"><i class="fas fa-circle circle2"></i><a href="#" class="btn_2_left">Annuels</a></li>
+                          </ul>
+                         </li>
+
+                         <li class="treeview li_paris">
+                          <a href="mes_paris.html" class="a">
+                            <i class="fas fa-align-left"></i>
+                            <span>Mes Paris</span>
+                          </a>
+                      </li>
+
+                       <li class="treeview li_emails">
+                        <a href="liste_emails.html" class="a">
+                            <i class="far fa-envelope"></i>
+                          <span>Ma liste d'emails</span>
+                        </a>
+                    </li>
+
+                    </ul>
+                   </div><!--./box-->
+
+                   
+
+            </div><!--./sidebar_left-->
+            <!--Navbarleft-->
+            <div style="margin-top: 2%; background-color: #F3F3F3;" class="col-xl-10 col-lg-10 col-md-9 col-sm-12 col liste_des_paris">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col pic_participant">
+                        <div class="logo_participant" id="logo_participant_id">
+                          
+                            <div class="image_participant ui-widget-content" id="id_image_participant" > 
+                              <label id="uploadButton1" for="uploadFile1"></label>
+                            <img class="download_image" src="./images/importer photo@2x.png" alt="logo">
+                             <span class="title_participant"><span class="your_files">Importez le logo "JPEG"</span></span>
+                             <input id="uploadFile1"
+                             type="file"
+                             name="image"
+                             class="img"
+                             value="Upload image">           
+                             <div class="btn_confirmer_annuler">
+                               <button>Confirmer</button>
+                               <button>Annuler</button>       
+                             </div>
+                             <label class="label_change_logo" for="uploadFile1"><i class="fas fa-camera"></i> <span> changer</span></label>
+                            
+                            </div>
+                          
+                        </div><!--./logo_participant-->
+                        <div class="carousel_matchs" id="carousel_matchs_id">
+                          <label id="uploadButton2" for="uploadFile2"></label>
+                          <div class="glisser_text">
+                            <p><i class="fas fa-arrows-alt"></i> <span>Faites glisser pour déplacer la photo de couverture</span></p>
+                          </div>
+
+                          <div class="btn_confirmer_annuler_coverture">
+                            <button>Confirmer</button>
+                            <button>Annuler</button>
+                          </div>
+                          <label class="label_change_logo_coverture"  for="uploadFile2"><i class="fas fa-camera"></i> <span> changer</span></label>
+                            <p class="title_participant_1"><span class="your_files">Importez une photo de couverture de vos colaborateurs "JPEG"</span></p>
+                            <input id="uploadFile2"
+                            type="file"
+                            name="image"
+                            class="img"
+                            value="Upload image_1">
+                            <div class="owl-carousel owl-theme" id="slideshow">
+                              <div class="item ligue" >
+                              
+
+                              
+                                
+ 
+                              </div><!--ligue-->
+                          </div>
+                        
+                           </div><!--carousel_match-->
+
+                    </div>  <!--./pic_participant-->
+                </div><!--./row_listes_des_paris-->
+                 
+                <!--div_annuels-->
+                <div class="Annuels" style="display: none;">
+                <div class="row"><!--row_inviter-->
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col div_inviter">
+
+
+                    <div class="div_inviter_soccer_1">
+                      <div class="name_ligue">
+                        <span class="p1_name_ligue"><span class="name_of_league_span">LA LIGA</span> <span>/</span> <span class="pays_organise">ESPAGNE</span></span>
+                        <p class="p2_name_ligue">Se termine <span class="date_annuels">23/08/2020</span></p>
+  
+                      </div><!--./name_ligue-->
+
+
+                       
+                    </div>   
+
+
+                   <div class="div_inviter_soccer">
+                        <div class="dropdown_div_inviter">
+
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle btn_drop" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Soccer
+                                <span class="caret"></span>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a  class="dropdown-item dropdown-item_annuels_1" href="#">Soccer</a>
+                                  <a  class="dropdown-item dropdown-item_annuels_2" href="#">Basketball</a>
+                                  <a  class="dropdown-item dropdown-item_annuels_3" href="#">Golf</a>
+                                  <a  class="dropdown-item dropdown-item_annuels_4" href="#">Football américain</a>
+                                </div>
+                              </div>
+
+                        </div><!--./dropdown-->
+
+                        <div class="btn_div_inviter">
+                           
+                            <button type="button" class="btn btn-secondary" id="btn_anuller">  Annuler</button>
+                            <button type="button" class="btn btn-secondary" id="btn_inviter"><i class="far fa-envelope-open"></i>  Inviter</button> 
+                            <button type="button" class="btn btn-secondary" id="btn_suivant"> Suivant</button>
+                            <button type="button" class="btn btn-secondary" id="btn_confirmer">  Confirmer</button><!--confirmer liste emails-->
+                            <button type="button" class="btn btn-secondary" id="btn_confirmer_1">  Confirmer</button><!--confirmer cadeaux-->
+                            <button type="button" class="btn btn-secondary" id="btn_confirmer_2">  Confirmer</button><!--confirmer squebeez-->
+                           
+
+                         
+                          </div><!--./btn_div_inviter-->
+                         
+                        <a href="#moadl_paiment" class="prix_paris" onclick="document.getElementById('moadl_paiment').style.display='block'">
+                          
+                            <img class="img_prix_paris" src="./images/Ticket@2x.png" alt="logo">
+                            <span class="span_prix_paris">10</span>
+                          
+                        </a><!--./prix_paris-->
+                      
+
+                    </div>
+
+                    </div><!--./div_inviter-->
+                </div><!--row_inviter-->
+
+                <!--div_liste_matchs-->
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col resultat_paris">
+                     <div class="container_resultat_paris">
+
+                      <div class="div_ligue_matchs">
+
+                        <div class="images_ligue">
+                            <div class="ligue1 show-list">
+                             
+                            </div><!--./ligue1-->
+   
+                            <div class="ligue2">
+                           
+                            </div><!--./ligue2-->
+   
+                            <div class="ligue3">
+                              
+                            </div><!--./ligue3-->
+   
+                            <div class="ligue4">
+                            
+                            </div><!--./ligue4-->
+   
+        
+                          
+                        </div><!--./images_ligue-->
+                       </div><!--./div_ligue_matchs-->
+
+                        
+
+
+
+
+                      <div class="background_result_paris back_border_right">
+                         
+                       <!--table-->
+                       <table class="table_div mytable" id="groupe_a">
+                        <thead>
+                          <tr class="tr_height">
+                          <th scope="col" class="date_pari">27/10/2020</th>
+                          <th scope="col">
+                          <input type="checkbox" class="input_th" id="input_th_1"  name="input_th" value="Apple">
+                          <label for="input_th_1" id="label_th"></label>
+                          </th>
+                          <th scope="col">Home</th>
+                          <th scope="col">Draw</th>
+                          <th scope="col">Away</th>
+                          </tr>
+                        </thead>
+                        <tbody> 
+                          <tr class="tr_caractéres_tables">
+                          <td scope="row" data-label="27/10/2019">
+                            19:00 GMT
+                          </td>
+                          <td data-label="">
+                            <div class="name_of_team">
+                              <!--./name_of_team_1_div-->
+                              <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">                               
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">                                                            
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+                            </div>
+                          </td>
+                          <td data-label="Home"><a href="#"><span class="prix_bet bet_1">4.90</span></a></td>
+                          <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">5.90</span></a></td>
+                          <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">6.90</span></a></td>
+                        </tr>
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+
+                        </tbody>
+                        </table>
+                      <!--table-->
+
+                       <!--table-->
+                       <table class="table_div mytable" id="groupe_a">
+                        <thead>
+                          <tr class="tr_height">
+                          <th scope="col" class="date_pari">28/10/2020</th>
+                          <th scope="col">
+                          <input type="checkbox" checked id="input_th" name="input_th" value="Apple">
+                          <label for="input_th" id="label_th"></label> 
+                          </th>
+                          <th scope="col">Home</th>
+                          <th scope="col">Draw</th>
+                          <th scope="col">Away</th>
+                          </tr>
+                        </thead>
+                        <tbody> 
+                          <tr class="tr_caractéres_tables">
+                          <td scope="row" data-label="27/10/2019">
+                            19:00 GMT
+                          </td>
+                          <td data-label="">
+                            <div class="name_of_team">
+                              <!--./name_of_team_1_div-->
+                              <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">                               
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">                                                            
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+                            </div>
+                          </td>
+                          <td data-label="Home"><a href="#"><span class="prix_bet bet_1">4.90</span></a></td>
+                          <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">5.90</span></a></td>
+                          <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">6.90</span></a></td>
+                          </tr>
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+                        </tbody>
+                        </table>
+                      <!--table-->
+                     
+
+                    
+
+                      <!--div liste des emails-->
+                      <div class="div_liste_des_emails_dashboard">
+                        <div class="toute_la_liste_desemails_div">
+
+                         <div class="icon_tous_laliste_emails">
+                           <div class="img_icon_tous_laliste_emails"><img src="./images/icon.png" alt="logo"></div>
+                          <div class="p_icon_tous_laliste_emails"><p>Toute La Liste</p></div> 
+                      </div>
+                        </div><!--./toute_la_liste_div-->
+              
+                        <div class="div_inputs_liste_emails">
+                          
+                          
+                              <div class="contents_div">
+                               <div class="input_right">
+                                
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                
+                               </div>
+                               <div class="input_left ">
+                                  
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                 
+                                  
+                               </div>
+                                  
+                              </div>
+                        
+
+                        </div>
+                          
+                        
+
+                        <div class="hr_bottom">
+                         <hr>
+                        </div><!--div_hr_bootom-->
+                      </div><!--./div_liste_des_emails_dashboard-->
+
+                      <!--div liste des emails-->
+
+                      <!--div cadeaux-->
+                      <div class="div_ajout_des_cadeaux">
+                        <p class="p_div_ajout_des_cadeaux">Définissez la, les récompense(s) de ce pari</p>
+                        <hr class="hr_ajout_des_cadeaux">
+                        <div class="content_div_cadeaux">
+
+                        <div class="add_new_div">
+                        <div class="div_récompense_cadeaux">
+                            <div class="div_images_cadeaux">
+                                <li class="li_ajout"><a href="#"><i class="material-icons icon_add_div_image">add_box</i></a></li> 
+                            <span class="title_prix">1er Prix</span>
+                            <div id="image_va_upload">
+                               <img id="image" src="images/trophy (1).png" alt="logo"> 
+                               <a id="importer_image" href="#">Importer image</a>
+                    
+                               <input id="uploadFile3"
+                               type="file"
+                               name="image"
+                               class="img"
+                               value="Upload image">
+                            </div>
+                            <input type="text" placeholder="Nom de la récompense" required>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="add_new_div_1" id="prix2">
+                      <div class="div_récompense_cadeaux_1">
+                          <div class="div_images_cadeaux_1">
+                              <li class="li_close_1"><a href="#"><i class="material-icons icon_add_div_image_1">close</i></a></li> 
+                          <span class="title_prix">2éme Prix</span>
+                          <div id="image_va_upload_1">
+                             <img id="image_1" src="images/trophy (1).png" alt="logo"> 
+                             <a id="importer_image_1" href="#">Importer image</a>
+                  
+                             <input id="uploadFile4"
+                             type="file"
+                             name="image"
+                             class="img"
+                             value="Upload image">
+                          </div>
+                          <input type="text" placeholder="Nom de la récompense" required>
+                          </div>
+                          
+                      </div>
+                  </div>
+
+                  <div class="add_new_div_2"  id="prix3">
+                    <div class="div_récompense_cadeaux_2">
+                        <div class="div_images_cadeaux_2">
+                            <li class="li_close_2"><a href="#"><i class="material-icons icon_add_div_image_1">close</i></a></li> 
+                        <span class="title_prix">3éme Prix</span>
+                        <div id="image_va_upload_2">
+                           <img id="image_2" src="images/trophy (1).png" alt="logo"> 
+                           <a id="importer_image_2" href="#">Importer image</a>
+                
+                           <input id="uploadFile5"
+                           type="file"
+                           name="image"
+                           class="img"
+                           value="Upload image">
+                        </div>
+                        <input type="text" placeholder="Nom de la récompense" required>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                </div><!--div_cadeaux_content-->
+
+                    </div><!--./div_ajout_des_cadeaux-->
+                      <!--div cadeaux-->
+
+                      <!--div_mes_squebes-->
+                      <div class="mes_squeebes">
+                        <p class="p_mes_squebees">Attribuez une bourse de jetons "SQUEBEEZ" aux participants du pari</p>
+                        <div class="div1_mes_squebees">
+                          <span class="span_div1_mes_squebees">SQUEBEEZ</span>
+                          <div class="div2_mes_squeebes">
+                            <img class="img_div2_mes_squeebes" src="/images/bitcion.png" alt="logo">
+                            <input class="input_div2_mes_squeebes" type="text" placeholder="1000">
+                          </div>
+                        </div>
+                      
+                      </div>
+                      <!--div_mes_squebes-->
+
+                      <!--creation de pari avec succées-->
+                      <div class="creation_avec_succée">
+
+                        <img src="./images/Group 990@2x.png" alt="logo">
+                        <p>Pari créée et invitations envoyées avec succés</p>
+
+                      </div>
+                      <!--creation de pari avec succées-->
+
+
+
+                      </div> <!--./background_result_paris-->   
+                     </div> <!--./container_resultat_paris-->    
+                    </div><!--./result_paris-->
+                </div><!--./row_liste_des_matchs-->
+
+
+                <!--./autre league annuels-->
+                <!--basketball-->
+                <div class="row">
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col resultat_paris_basketball">
+                   <div class="container_resultat_paris_Basketball">
+
+                    <div class="div_ligue_matchs_basketball">
+
+                      <div class="images_ligue_basketball">
+                          <div class="ligue1_basketball show-list">
+                           
+                          </div><!--./ligue1-->                          
+                      </div><!--./images_ligue-->
+                     </div><!--./div_ligue_matchs-->
+                     <div class="background_basketball back_border_right">
+
+                     </div> 
+                   </div><!--./container basketball-->
+                  </div><!--./col basketball-->
+                </div><!--./row basketball-->
+                <!--basketball-->
+
+                <!--Golf-->
+                <div class="row">
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col resultat_paris_golf">
+                   <div class="container_resultat_paris_golf">
+
+                    <div class="div_ligue_matchs_golf">
+
+                      <div class="images_ligue_golf">
+                          <div class="ligue1_golf show-list">
+                           
+                          </div><!--./ligue1-->                          
+                      </div><!--./images_ligue-->
+                     </div><!--./div_ligue_matchs-->
+                     <div class="background_golf back_border_right">
+
+                     </div> 
+                   </div><!--./container basketball-->
+                  </div><!--./col basketball-->
+                </div><!--./row basketball-->
+                <!--Golf-->
+
+                 <!--Footbal_américain-->
+                 <div class="row">
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col resultat_paris_footbal_americain">
+                   <div class="container_resultat_paris_footbal_americain">
+
+                    <div class="div_ligue_matchs_footbal_americain">
+
+                      <div class="images_ligue_footbal_americain">
+                          <div class="ligue1_footbal_americain show-list">
+                           
+                          </div><!--./ligue1-->                          
+                      </div><!--./images_ligue-->
+                     </div><!--./div_ligue_matchs-->
+                     <div class="background_footbal_americain back_border_right">
+
+                     </div> 
+                   </div><!--./container basketball-->
+                  </div><!--./col basketball-->
+                </div><!--./row basketball-->
+                <!--Footbal_américain-->
+                <!--./autre league annuels-->
+                  
+                <!--Moadl paiment-->
+                <div id="moadl_paiment" class="modal_paiment_class">
+                  <div class="div_content_moadl_paiment" id="div_content_paiment_modal">
+                    <a href="#close" title="Close" class="close_paiment"><span class="croix"><img src="./images/Group 1029@2x.png" alt="logo"></span></a>
+                    <div class="white_div_modal_paiment">
+                     
+                      <div class="div_paiment_right">
+
+                       <div class="tickets">
+
+                         <div class="div1_tickets">
+                           <span class="span1_div1_tickets">Mes Tickets</span>
+                           <img src="./images/Ticket@2x.png" alt="logo">
+                           <span class="span2_div1_tickets">10</span>
+                         </div><!--./div1_tickets-->
+
+                         <div class="div2_tickets">
+
+                          <div class="dropdown dropdown_paiment">
+                            <button class="btn btn-secondary dropdown-toggle btn_drop_paiment" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Soccer
+                            <span class="caret"></span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#moadl_paiment">Soccer</a>
+                              <a class="dropdown-item" href="#moadl_paiment">Basketball</a>
+                              <a class="dropdown-item" href="#moadl_paiment">handball</a>
+                              <a class="dropdown-item" href="#moadl_paiment">cricket</a>
+                            </div>
+                          </div><!--./dropdown_paiment-->
+
+                        </div><!--./div2_tickets-->
+
+                       </div><!--./tickets-->
+                       
+                        <div class="div_label">
+                       <label class="label_for_input_promo" for="input_code_promo">Code Promo ?</label>
+                      </div>
+
+                       <div class="code_promo">
+                        <div class="div1_code_promo">
+                          <div class="div_input_code_promo">
+                            <input type="text" name="input_code_promo" id="input_code_promo">
+                             <button>Soumettre</button>
+                          </div>
+
+                        </div><!--./div1_code_promo-->
+                        <div class="dropdow_input_code_promo">
+
+                          <div class="dropdown dropdown_devise">
+                            <button class="btn btn-secondary dropdown-toggle btn_drop_devise" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              EUR
+                            <span class="caret"></span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#moadl_paiment">EUR</a>
+                              <a class="dropdown-item" href="#moadl_paiment">USD</a>
+                              <a class="dropdown-item" href="#moadl_paiment">TND</a>
+                            </div>
+                          </div><!--./dropdown_paiment-->
+
+                        </div><!--./dropdow_input_code_promo-->
+                       </div><!--./code_promo-->
+
+                       <div class="Résume_des_commandes">
+                        <h6>Résumé des commandes</h6>
+                        <div class="tickets_pari">
+                          <img class="img_tickets_pari" src="./images/Ticket@2x.png" alt="">
+                          <span class="span1_tickets_pari">TICKETS DE PARIS</span>
+                          <div class="ajout_soustraction_pari">
+                            <i class="fas fa-minus"></i>
+                            <input type="text" class="span2_tickets_pari" value="10" required >
+                            <i class="fas fa-plus"></i>
+
+                          </div><!--./ajout_soustraction_pari-->
+
+                        </div><!--./tickets_pari-->
+                        <hr class="hr_paiment">
+
+                       <div class="total_prix">
+                         <span class="span1_total_prix">Total</span>
+                         <span class="span2_total_prix">190.00€</span>
+
+                       </div><!--./total_prix-->
+                         
+                       </div><!--./Résume_des_commandes-->
+                       
+
+
+                      </div><!--./div_paiment_right-->
+
+                      <div class="div_paiment_left">
+                        <div class="content_div_paiment_left">
+                        <h6>Options de paiment</h6>
+                        <div class="logo_paiment">
+                          <img src="./images/mastercard.png">
+                          <img src="./images/visa.png">    
+                          <img src="./images/amex.png">
+                          <img src="./images/paypal.png">
+                        </div><!--./logo_paiment-->
+                        <div class="num_card_div">
+                          <label for="num_card">NUMERO DE LA CARTE</label>
+                        <input type="text" id="num_card" name="num_card" placeholder="0000 0000 0000 0000" required>
+                      </div><!--./num_card_div-->
+                      <div class="div_nom_date">
+                        <div class="div_nom_user">
+                            <label for="nom_user">AU NOM DE</label>
+                            <input type="text" id="nom_user" name="nom_user" placeholder="Ex.Jhon" required>
+                        </div>
+                        <div class="div_date_card">
+                            <label for="date_experation">DATE D'EXPIRATION</label>
+                            <input type="text" id="date_experation" name="date_experation" placeholder="MM/YYYY" required>
+                        </div>
+                    </div><!--./div_nom_date-->
+                    <div class="div_ccv_btn"> 
+                          <label for="code_ccv">CODE CCV</label>
+                          <input type="text" id="code_ccv" name="code_ccv" placeholder="CCV CODE" required>
+                  </div><!--./div_ccv_btn-->
+                </div>
+                      </div><!--./div_paiment_left-->
+
+
+                    </div><!--./white_div_modal_paiment-->
+
+                    <div class="div_confirmer_paiment">
+                      <button class="btn_confirmer_paiment">Confirmer</button>
+                    </div>
+
+                    <div class="succee_paiment">
+                      <img src="./images/Group 990@2x.png" alt="logo">
+                      <span>Succés de paiement !</span>
+                    </div>
+                    
+                    <div class="garder_compétitions" style="display: none;">
+                    <span class="span_garder_compétiotions">Vous voulez garder les mêmes compétitions ?</span>
+                  </div>
+
+                    <div class="choisir_quatre_ligues_div" style="display: none;">
+
+                      <div class="card card-0">
+                        <i class="fas fa-calendar-alt" data-title="24/04/2019 24/04/2020"></i>
+                        <img src="./images/chamions-league.png" alt="logo">
+                    </div>
+                    <div class="card card-1 ">
+                      <i class="fas fa-calendar-alt" data-title="24/04/2019 24/04/2020"></i>
+                      <img src="./images/euro.png" alt="logo">
+                  </div>
+                  <div class="card card-2 ">
+                      <i class="fas fa-calendar-alt" data-title="24/04/2019 24/04/2020"></i>
+                      <img src="./images/premier-league.png" alt="logo">
+                  </div>
+                  <div class="card card-3 ">
+                    <i class="fas fa-calendar-alt" data-title="24/04/2019 24/04/2020"></i>
+                   <img src="./images/laLiga.png" alt="logo">
+                </div>
+                <div class="card card-4 ">
+                    <i class="fas fa-calendar-alt" data-title="24/04/2019 24/04/2020"></i>
+                    <img src="./images/ligue1.png" alt="">
+                </div>
+                <div class="card card-5 ">
+                    <i class="fas fa-calendar-alt" data-title="24/04/2019 24/04/2020"></i>
+                    <img src="./images/serieA.png" alt="logo">
+                </div>
+                <div class="card card-6 ">
+                  <i class="fas fa-calendar-alt" data-title="24/04/2019 24/04/2020"></i>
+                 <img src="./images/bundesliga.png" alt="logo">
+              </div>
+
+              </div><!--./choisir_quatre_ligues_div-->
+
+              <div class="div_confirmation_quatre_league" style="display: none;">
+                <span>Jusqu'a 4 Compétitions</span>
+                <a href="#close" >Confirmer</a>
+              </div>
+                  
+                  </div><!--./div_content_moadl_paiment-->
+
+                </div><!--./modal_paiment_class-->
+                <!--Moadl paiment-->
+
+              </div> 
+              <!--div_annuels-->
+
+
+              <!--div_périodique-->
+              <div class="Périodiques">
+                <div class="row"><!--row_inviter-->
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col div_inviter">
+
+
+                    <div class="div_inviter_soccer_1">
+                      <div class="name_ligue">
+                        <span class="p1_name_ligue"><span class="name_of_league_span  name_of_league_span_periodique">COUPE D'EUROPE</span> <span class="slach">/</span> <span class="name_pays_organise">EUROPE</span></span>
+                        <p class="p2_name_ligue  p2_name_ligue_periodique">Se termine <span class="date_fin_league">10/04/2020</span></p>
+  
+                      </div><!--./name_ligue-->   
+                    </div>   
+
+
+                   <div class="div_inviter_soccer">
+                        <div class="dropdown_div_inviter_periodique">
+
+                            <div class="dropdown dropdown_periodique">
+                                <button class="btn btn-secondary dropdown-toggle btn_drop_periodique" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Soccer
+                                  <span class="caret"></span>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu_periodique" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item dropdown-item_periodique_1" href="#">Soccer</a>
+                                  <a class="dropdown-item dropdown-item_periodique_2" href="#">Basketball</a>
+                                  <a class="dropdown-item dropdown-item_periodique_3" href="#">Golf</a>
+                                  <a class="dropdown-item dropdown-item_periodique_4" href="#">Football américain</a>
+                                </div>
+                              </div>
+
+                        </div><!--./dropdown-->
+
+                        <div class="btn_div_inviter">
+                           
+                            <button type="button" class="btn btn-secondary" id="btn_anuller_periodique">  Annuler</button>
+                            <button type="button" class="btn btn-secondary" id="btn_inviter_periodique"><i class="far fa-envelope-open"></i>  Inviter</button> 
+                            <button type="button" class="btn btn-secondary" id="btn_suivant_periodique"> Suivant</button>
+                            <button type="button" class="btn btn-secondary" id="btn_confirmer_periodique">  Confirmer</button><!--confirmer liste emails-->
+                            <button type="button" class="btn btn-secondary" id="btn_confirmer_1_periodique">  Confirmer</button><!--confirmer cadeaux-->
+                            <button type="button" class="btn btn-secondary" id="btn_confirmer_2_periodique">  Confirmer</button><!--confirmer squebeez-->
+                           
+
+                         
+                          </div><!--./btn_div_inviter-->
+
+                    </div>
+
+                    </div><!--./div_inviter-->
+                </div><!--row_inviter-->
+
+                <!--div_liste_matchs-->
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col resultat_paris_periodique">
+                     <div class="container_resultat_paris">
+
+                      <div class="div_ligue_matchs">
+
+                        <div class="images_ligue">
+                            <div class="show-list ligue1_periodique">
+                             
+                            </div><!--./ligue1-->
+   
+                            <div class="ligue2_periodique">
+                           
+                            </div><!--./ligue2-->
+   
+                            <div class="ligue3_periodique">
+                              
+                            </div><!--./ligue3-->
+   
+                            <div class="ligue4_periodique">
+                            
+                            </div><!--./ligue4-->
+   
+        
+                          
+                        </div><!--./images_ligue-->
+                       </div><!--./div_ligue_matchs-->
+
+                        
+
+
+
+
+                      <div class="background_result_paris back_border_right">
+                         
+                       <!--table-->
+                       <table class="table_div_periodique mytable">
+                        <thead>
+                          <tr class="tr_height_periodique">
+                          <th scope="col" class="date_pari">27/10/2020</th>
+                          <th scope="col">
+                          <input type="checkbox" class="input_th" id="input_th_1"  name="input_th" value="Apple">
+                          <label for="input_th_1" id="label_th"></label>
+                          </th>
+                          <th scope="col">Home</th>
+                          <th scope="col">Draw</th>
+                          <th scope="col">Away</th>
+                          </tr>
+                        </thead>
+                        <tbody> 
+                          <tr class="tr_caractéres_tables_periodique">
+                          <td scope="row" data-label="27/10/2019">
+                            19:00 GMT
+                          </td>
+                          <td data-label="">
+                            <div class="name_of_team">
+                              <!--./name_of_team_1_div-->
+                              <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">                               
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">                                                            
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+                            </div>
+                          </td>
+                          <td data-label="Home"><a href="#"><span class="prix_bet bet_1">4.90</span></a></td>
+                          <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">5.90</span></a></td>
+                          <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">6.90</span></a></td>
+                        </tr>
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Juventus</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/9/9f/Logo_Juventus.svg" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://seeklogo.net/wp-content/uploads/2011/08/liverpool-logo-vector.png" alt="logo">
+                                <span class="name_team_2">Liverpool</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+
+                        </tbody>
+                        </table>
+                      <!--table-->
+
+                       <!--table-->
+                       <table class="table_div_periodique mytable" id="groupe_a">
+                        <thead>
+                          <tr class="tr_height_periodique">
+                          <th scope="col" class="date_pari">28/10/2020</th>
+                          <th scope="col">
+                          <input type="checkbox" checked id="input_th" name="input_th" value="Apple">
+                          <label for="input_th" id="label_th"></label> 
+                          </th>
+                          <th scope="col">Home</th>
+                          <th scope="col">Draw</th>
+                          <th scope="col">Away</th>
+                          </tr>
+                        </thead>
+                        <tbody> 
+                          <tr class="tr_caractéres_tables_periodique">
+                          <td scope="row" data-label="27/10/2019">
+                            19:00 GMT
+                          </td>
+                          <td data-label="">
+                            <div class="name_of_team">
+                              <!--./name_of_team_1_div-->
+                              <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">                               
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">                                                            
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+                            </div>
+                          </td>
+                          <td data-label="Home"><a href="#"><span class="prix_bet bet_1">4.90</span></a></td>
+                          <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">5.90</span></a></td>
+                          <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">6.90</span></a></td>
+                          </tr>
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+
+                          <tr class="tr_caractéres_tables_periodique">
+                            <td scope="row" data-label="27/10/2019">19:00 GMT</td>
+                            <td data-label="">
+                              <div class="name_of_team">
+                                <!--./name_of_team_1_div-->
+                               <div class="name_of_team_1_div">
+                                <span class="name_team_1">Real Madrid</span>
+                                <img class="logo_team_1" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/1200px-Logo_Real_Madrid.svg.png" alt="logo">        
+                              </div>
+                              <!--./name_of_team_1_div-->
+                               <div class="separateur_divs"> <span class="span_between_name">-</span></div>
+                                <!--./name_of_team_2_div-->
+                               <div class="name_of_team_2_div">        
+                                <img class="logo_team_2" src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="logo">
+                                <span class="name_team_2">Barcelona</span>
+                              </div>
+                              <!--./name_of_team_2_div-->
+
+                              </div>
+                            </td>
+                            <td data-label="Home"><a href="#"><span class="prix_bet bet_1">1.90</span></a></td>
+                            <td data-label="Draw"><a href="#"><span class="prix_bet bet_2">2.90</span></a></td>
+                            <td class="td3" data-label="Away"><a href="#"><span class="prix_bet bet_3">3.90</span></a></td>
+                          </tr>
+                        </tbody>
+                        </table>
+                      <!--table-->
+                     
+
+                    
+
+                      <!--div liste des emails-->
+                      <div class="div_liste_des_emails_dashboard_periodique">
+                        <div class="toute_la_liste_desemails_div">
+
+                         <div class="icon_tous_laliste_emails">
+                           <div class="img_icon_tous_laliste_emails"><img src="./images/icon.png" alt="logo"></div>
+                          <div class="p_icon_tous_laliste_emails"><p>Toute La Liste</p></div> 
+                      </div>
+                        </div><!--./toute_la_liste_div-->
+              
+                        <div class="div_inputs_liste_emails">
+                          
+                          
+                              <div class="contents_div">
+                               <div class="input_right">
+                                
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                
+                               </div>
+                               <div class="input_left">
+                                  
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                  <input type="text" placeholder="someone@example.com" required>
+                                 
+                                  
+                               </div>
+                                  
+                              </div>
+                        
+
+                        </div>
+                          
+                        
+
+                        <div class="hr_bottom">
+                         <hr>
+                        </div><!--div_hr_bootom-->
+                      </div><!--./div_liste_des_emails_dashboard-->
+
+                      <!--div liste des emails-->
+
+                      <!--div cadeaux-->
+                      <div class="div_ajout_des_cadeaux_periodique">
+                        <p class="p_div_ajout_des_cadeaux">Définissez la, les récompense(s) de ce pari</p>
+                        <hr class="hr_ajout_des_cadeaux">
+                        <div class="content_div_cadeaux_periodique">
+
+                        <div class="add_new_div_periodique">
+                        <div class="div_récompense_cadeaux_periodique">
+                            <div class="div_images_cadeaux_periodique">
+                                <li class="li_ajout_periodique"><a href="#"><i class="material-icons icon_add_div_image">add_box</i></a></li> 
+                            <span class="title_prix">1er Prix</span>
+                            <div id="image_va_upload_periodique">
+                               <img id="image_periodique" src="images/trophy (1).png" alt="logo"> 
+                               <a id="importer_image_periodique" href="#">Importer image</a>
+                    
+                               <input id="uploadFile6"
+                               type="file"
+                               name="image"
+                               class="img"
+                               value="Upload image">
+                            </div>
+                            <input type="text" placeholder="Nom de la récompense" required>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="add_new_div_1_periodique" id="prix2_periodique">
+                      <div class="div_récompense_cadeaux_1_periodique">
+                          <div class="div_images_cadeaux_1_periodique">
+                              <li class="li_close_1_periodique"><a href="#"><i class="material-icons icon_add_div_image_1">close</i></a></li> 
+                          <span class="title_prix">2éme Prix</span>
+                          <div id="image_va_upload_1_periodique">
+                             <img id="image_1_periodique" src="images/trophy (1).png" alt="logo"> 
+                             <a id="importer_image_1_periodique" href="#">Importer image</a>
+                  
+                             <input id="uploadFile7"
+                             type="file"
+                             name="image"
+                             class="img"
+                             value="Upload image">
+                          </div>
+                          <input type="text" placeholder="Nom de la récompense" required>
+                          </div>
+                          
+                      </div>
+                  </div>
+
+                  <div class="add_new_div_2_periodique"  id="prix3_periodique">
+                    <div class="div_récompense_cadeaux_2_periodique">
+                        <div class="div_images_cadeaux_2_periodique">
+                            <li class="li_close_2_periodique"><a href="#"><i class="material-icons icon_add_div_image_1">close</i></a></li> 
+                        <span class="title_prix">3éme Prix</span>
+                        <div id="image_va_upload_2_periodique">
+                           <img id="image_2_periodique" src="images/trophy (1).png" alt="logo"> 
+                           <a id="importer_image_2_periodique" href="#">Importer image</a>
+                
+                           <input id="uploadFile8"
+                           type="file"
+                           name="image"
+                           class="img"
+                           value="Upload image">
+                        </div>
+                        <input type="text" placeholder="Nom de la récompense" required>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                </div><!--div_cadeaux_content-->
+
+                    </div><!--./div_ajout_des_cadeaux-->
+                      <!--div cadeaux-->
+
+                      <!--div_mes_squebes-->
+                      <div class="mes_squeebes_periodique">
+                        <p class="p_mes_squebees">Attribuez une bourse de jetons "SQUEBEEZ" aux participants du pari</p>
+                        <div class="div1_mes_squebees">
+                          <span class="span_div1_mes_squebees">SQUEBEEZ</span>
+                          <div class="div2_mes_squeebes">
+                            <img class="img_div2_mes_squeebes" src="/images/bitcion.png" alt="logo">
+                            <input class="input_div2_mes_squeebes_periodique" type="text" placeholder="1000">
+                          </div>
+                        </div>
+                      
+                      </div>
+                      <!--div_mes_squebes-->
+
+                      <!--creation de pari avec succées-->
+                      <div class="creation_avec_succée_periodique">
+
+                        <img src="./images/Group 990@2x.png" alt="logo">
+                        <p>Pari créée et invitations envoyées avec succés</p>
+
+                      </div>
+                      <!--creation de pari avec succées-->
+
+
+
+                      </div> <!--./background_result_paris-->   
+                     </div> <!--./container_resultat_paris-->    
+                    </div><!--./result_paris-->
+                </div><!--./row_liste_des_matchs-->
+                
+                 <!--./autre league annuels-->
+                <!--basketball-->
+                <div class="row">
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col resultat_paris_basketball_periodique">
+                   <div class="container_resultat_paris_Basketball_periodique">
+
+                    <div class="div_ligue_matchs_basketball_periodique">
+
+                      <div class="images_ligue_basketball_periodique">
+                          <div class="ligue1_basketball_periodique show-list">
+                           
+                          </div><!--./ligue1-->                          
+                      </div><!--./images_ligue-->
+                     </div><!--./div_ligue_matchs-->
+                     <div class="background_basketball_periodique back_border_right">
+
+                     </div> 
+                   </div><!--./container basketball-->
+                  </div><!--./col basketball-->
+                </div><!--./row basketball-->
+                <!--basketball-->
+
+                <!--Golf-->
+                <div class="row">
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col resultat_paris_golf_periodique">
+                   <div class="container_resultat_paris_golf_periodique">
+
+                    <div class="div_ligue_matchs_golf_periodique">
+
+                      <div class="images_ligue_golf_periodique">
+                          <div class="ligue1_golf_periodique show-list">
+                           
+                          </div><!--./ligue1-->                          
+                      </div><!--./images_ligue-->
+                     </div><!--./div_ligue_matchs-->
+                     <div class="background_golf_periodique back_border_right">
+
+                     </div> 
+                   </div><!--./container basketball-->
+                  </div><!--./col basketball-->
+                </div><!--./row basketball-->
+                <!--Golf-->
+
+                 <!--Footbal_américain-->
+                 <div class="row">
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col resultat_paris_footbal_americain_periodique">
+                   <div class="container_resultat_paris_footbal_americain_periodique">
+
+                    <div class="div_ligue_matchs_footbal_americain_periodique">
+
+                      <div class="images_ligue_footbal_americain_periodique">
+                          <div class="ligue1_footbal_americain_periodique show-list">
+                           
+                          </div><!--./ligue1-->                          
+                      </div><!--./images_ligue-->
+                     </div><!--./div_ligue_matchs-->
+                     <div class="background_footbal_americain_periodique back_border_right">
+
+                     </div> 
+                   </div><!--./container basketball-->
+                  </div><!--./col basketball-->
+                </div><!--./row basketball-->
+                <!--Footbal_américain-->
+                <!--./autre league annuels-->
+
+              </div> 
+              <!--div_périodique-->
+
+
+
+
+
+                <!--div_liste_matchs-->
+
+
+            </div><!--./liste_des_paris-->
+
+                </div><!--./container_content_tous_div-->
+                </div><!--./row_content_tous_div-->
+             
+            </div><!--./content_tous_div-->
+        </div><!--row-->
+    </div><!--./container-->
+
+    
+
+
+<!-- Optional JavaScript -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/dashboard_admin.js"></script>
+<script src="js/drag_background.js"></script>
+<!--Owl Carousel-->
+<script src="js/owl.carousel.min.js"></script>
+<!--magnificient POPUP-->
+<script src="./js/jquery.magnific-popup.min.js"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>        
+</body>
+</html>
